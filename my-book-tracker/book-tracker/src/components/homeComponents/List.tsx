@@ -31,7 +31,7 @@ function List() {
             {books?.map((book, i) => (
               <div className="book-item" key={i}>
                 <img
-                  src={book.volumeInfo.imageLinks.thumbnail}
+                  src={book?.volumeInfo?.imageLinks?.thumbnail}
                   alt="book cover"
                 />
                 <h3>{book.volumeInfo.title}</h3>
